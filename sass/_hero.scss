@@ -1,0 +1,33 @@
+.background{
+    max-width: 100vw;
+    background-image: url(/img/background.png);
+    background-size: cover;
+    background-position: center center;
+
+    min-height: 90vh;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introduction{
+    // margin-top: 7rem;
+    // margin-left: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    
+
+    &__text{
+        color: #fff;
+        font-size: 5.5rem;
+        margin-bottom: 3rem;
+    }
+
+    &__subtext{
+        color: #fff;
+        font-size: 1.8rem;
+    }
+}

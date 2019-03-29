@@ -1,0 +1,124 @@
+:root {
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --color-grey-dark-4: #212121;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0, .3);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0, .06); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  line-height: 1;
+  font-family: "Josefin Sans", sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+.navigation {
+  display: flex;
+  background-color: var(--color-grey-dark-4); }
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-size: 1.6rem;
+  padding: 2rem; }
+  .nav__logo {
+    margin-right: auto; }
+  .nav__logo--image {
+    height: 5rem; }
+  .nav__item:not(:last-child) {
+    margin-right: 1.5rem; }
+  .nav__link:link, .nav__link:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+.background {
+  max-width: 100vw;
+  background-image: url(/img/background.png);
+  background-size: cover;
+  background-position: center center;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.introduction {
+  display: flex;
+  flex-direction: column; }
+  .introduction__text {
+    color: #fff;
+    font-size: 5.5rem;
+    margin-bottom: 3rem; }
+  .introduction__subtext {
+    color: #fff;
+    font-size: 1.8rem; }
+
+.footer {
+  height: 30rem;
+  background-color: var(--color-grey-dark-4); }
+
+.profile {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .profile__name {
+    align-self: center;
+    color: #fff;
+    margin-left: 3rem; }
+  .profile__img {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    justify-self: center; }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .contact__item {
+    padding-left: 3rem; }
+  .contact__link:link, .contact__link:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase; }
+  .contact button {
+    justify-self: center;
+    align-self: center; }
+
+.btn, .btn:link, .btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  transition: all .2s; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn--white {
+  background-color: #fff;
+  color: black; }

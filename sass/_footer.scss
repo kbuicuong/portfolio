@@ -1,0 +1,48 @@
+.footer{
+    height: 30rem; //debug
+    background-color: var(--color-grey-dark-4);
+}
+
+.profile{
+    padding-top: 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__name{
+        align-self: center;
+        color: #fff;
+        margin-left: 3rem;
+    }
+
+    &__img{
+        height: 10rem;
+        width: 10rem;
+        border-radius: 50%;
+        justify-self: center;
+    }
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &__nav{
+
+    }
+
+    &__item{
+        padding-left: 3rem;
+    }
+
+    &__link:link,
+    &__link:visited{
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    button{
+        justify-self: center;
+        align-self: center;
+    }
+}
