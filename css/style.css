@@ -110,15 +110,32 @@ ul {
   text-decoration: none;
   padding: 1.5rem 4rem;
   border-radius: 10rem;
-  transition: all .2s; }
+  transition: all .2s;
+  border: none;
+  cursor: pointer; }
 
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
   .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0; }
+    opacity: 0;
+    /* Fade out */ }
+
+.btn:active, .btn:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
 .btn--white {
   background-color: #fff;
   color: black; }
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s; }
