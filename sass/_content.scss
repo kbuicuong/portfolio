@@ -2,11 +2,13 @@
     //height: 100vh;
     padding: 1rem 2rem;
     
-    
+    &__text{
+        text-align: center;
+    }
 
-    &__content{
+    &__contents{
         display: grid;
-        grid-template-columns: repeat(8, minmax(min-content, 1fr));
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
 
 
         background-color: #fff;
@@ -15,5 +17,21 @@
         border-radius: 6px;
         box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
         margin-bottom: 3rem;
+        padding: 10rem 10rem;
+        justify-items: center;
+        align-items: center;
+    }
+
+    &__content{
+        display: grid;
+        grid-template-columns: min-content 1fr;
+        grid-row-gap: 1.5rem;
+        grid-column-gap: 2.5rem;
+
+        &__icon{
+            width: 4.5rem;
+        }
+
+
     }
 }
