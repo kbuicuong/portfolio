@@ -31,9 +31,14 @@ ol,
 ul {
   list-style: none; }
 
+.margin-top-small {
+  margin-top: 2rem; }
+
 .navigation {
   display: flex;
-  background-color: var(--color-grey-dark-4); }
+  background-color: var(--color-grey-dark-4);
+  position: fixed;
+  width: 100%; }
 
 .nav {
   display: flex;
@@ -55,13 +60,15 @@ ul {
 .background {
   max-width: 100vw;
   background-image: url(/img/background.png);
-  background-size: cover;
-  background-position: center center;
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .introduction {
   display: flex;
@@ -97,37 +104,40 @@ ul {
     grid-column-gap: 2.5rem; }
     .main__content__icon {
       width: 4.5rem; }
+    .main__content p {
+      align-self: center; }
 
 .footer {
   height: 30rem;
   background-color: var(--color-grey-dark-4); }
-
-.profile {
-  padding-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
-  .profile__name {
-    align-self: center;
-    color: #fff;
-    margin-left: 3rem; }
-  .profile__img {
-    height: 10rem;
-    width: 10rem;
-    border-radius: 50%;
-    justify-self: center; }
-
-.contact {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
-  .contact__item {
-    padding-left: 3rem; }
-  .contact__link:link, .contact__link:visited {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase; }
-  .contact button {
-    justify-self: center;
-    align-self: center; }
+  .footer__profile {
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr)); }
+    .footer__profile__name {
+      align-self: center;
+      justify-self: center;
+      color: #fff;
+      margin-left: 3rem; }
+    .footer__profile__img {
+      height: 10rem;
+      width: 10rem;
+      border-radius: 50%;
+      justify-self: center; }
+    .footer__profile button {
+      justify-self: center;
+      align-self: center; }
+  .footer__contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    .footer__contact__nav {
+      justify-self: center; }
+    .footer__contact__item:not(:last-child) {
+      margin-bottom: 1rem; }
+    .footer__contact__link:link, .footer__contact__link:visited {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;

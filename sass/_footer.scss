@@ -1,48 +1,57 @@
 .footer{
     height: 30rem; //debug
     background-color: var(--color-grey-dark-4);
+
+    &__profile{
+        padding-top: 5rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
+
+        &__name{
+            align-self: center;
+            justify-self: center;
+            color: #fff;
+            margin-left: 3rem;
+        }
+
+        &__img{
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+            justify-self: center;
+        }
+
+        button{
+            justify-self: center;
+            align-self: center;
+        }
+    }
+
+    &__contact{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+        &__nav{
+            justify-self: center;
+        }
+
+        &__item{
+            //margin-left: 3rem;
+            
+            &:not(:last-child){
+                margin-bottom: 1rem;
+            }
+        }
+
+        &__link:link,
+        &__link:visited{
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+    }
+
 }
 
-.profile{
-    padding-top: 5rem;
-
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-    &__name{
-        align-self: center;
-        color: #fff;
-        margin-left: 3rem;
-    }
-
-    &__img{
-        height: 10rem;
-        width: 10rem;
-        border-radius: 50%;
-        justify-self: center;
-    }
-}
-
-.contact{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    &__nav{
-
-    }
-
-    &__item{
-        padding-left: 3rem;
-    }
-
-    &__link:link,
-    &__link:visited{
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-
-    button{
-        justify-self: center;
-        align-self: center;
-    }
-}
