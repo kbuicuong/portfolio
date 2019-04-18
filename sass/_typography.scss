@@ -1,3 +1,41 @@
+%heading{
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.heading-1{
+    @extend %heading;
+    font-size: 4.5rem;
+    color: var(--color-grey-light-1);
+    line-height: 1;
+}
+
+.heading-2{
+    @extend %heading;
+    font-size: 3.5rem;
+    color: var(--color-grey-light-1);
+    line-height: 1;
+}
+
+.heading-3{
+    @extend %heading;
+    font-size: 2.5rem;
+    color: var(--color-grey-light-1);
+    line-height: 1;
+    font-weight: 200;
+}
+
+.heading-4{
+    @extend %heading;
+    font-size: 1.5rem;
+    color: var(--color-grey-light-1);
+    line-height: 1;
+}
+
 .margin-top-small{
     margin-top: 2rem;
+}
+
+.mb-small{
+    margin-bottom: 2rem;
 }
