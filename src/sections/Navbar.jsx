@@ -31,7 +31,7 @@ const NavBar = () => {
                     className='flex justify-between items-center py-5 mx-auto c-space'>
                     <a href='/'
                        className='text-neutral-400 font-bold text-xl hover:text-white transition-colors duration-500'>
-                        Kevin
+                        Kevin Bui
                     </a>
 
                     <button onClick={toggleMenu} className='text-neutral-400 hover:text-white
