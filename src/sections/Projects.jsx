@@ -2,8 +2,8 @@ import React, {Suspense} from 'react';
 import {myProjects} from "../constants/index.js";
 import {Canvas} from "@react-three/fiber";
 import {Center, OrbitControls} from "@react-three/drei";
-import canvasLoader from "../components/CanvasLoader.jsx";
 import DemoComputer from "../components/DemoComputer.jsx";
+import CanvasLoader from "../components/CanvasLoader.jsx";
 
 const projectCount = myProjects.length;
 
@@ -82,7 +82,7 @@ const Projects = () => {
                         <ambientLight intensity={Math.PI}/>
                         <directionalLight position={[10, 10, 5]}/>
                         <Center>
-                            <Suspense fallback={canvasLoader}>
+                            <Suspense fallback={<CanvasLoader/>}>
                                 <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
                                     <DemoComputer texture={currentProject.texture} />
                                 </group>
