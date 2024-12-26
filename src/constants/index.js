@@ -58,11 +58,11 @@ export const clientReviews = [
 
 export const myProjects = [
     {
-        title: 'Podcastr - AI Podcast Platform',
-        desc: 'Podcastr is a revolutionary Software-as-a-Service platform that transforms the way podcasts are created. With advanced AI-powered features like text-to-multiple-voices functionality, it allows creators to generate diverse voiceovers from a single text input.',
+        title: 'NailsByTony - Beauty Salon Website/Scheduler',
+        desc: 'NailsByTony is a web application that allows user to book appointments and learn about the services offered by the salon. The user can book appointments and the admin can manage the appointments.',
         subdesc:
-            'Built as a unique Software-as-a-Service app with Next.js 14, Tailwind CSS, TypeScript, Framer Motion and Convex, Podcastr is designed for optimal performance and scalability.',
-        href: 'https://www.youtube.com/watch?v=zfAb95tJvZQ',
+            'Built with Vite, Tailwind CSS, and TypeScript. With the scheduler library @aldabil/react-scheduler\n',
+        href: 'https://github.com/kbuicuong/schedule_app',
         texture: '/textures/project/project1.mp4',
         logo: '/assets/project-logo1.png',
         logoStyle: {
@@ -87,11 +87,11 @@ export const myProjects = [
                 name: 'TypeScript',
                 path: '/assets/typescript.png',
             },
-            {
-                id: 4,
-                name: 'Framer Motion',
-                path: '/assets/framer.png',
-            },
+            // {
+            //     id: 4,
+            //     name: 'Framer Motion',
+            //     path: '/assets/framer.png',
+            // },
         ],
     },
     {
@@ -260,29 +260,29 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
 export const workExperiences = [
     {
         id: 1,
-        name: 'Framer',
-        pos: 'Lead Web Developer',
-        duration: '2022 - Present',
-        title: "Framer serves as my go-to tool for creating interactive prototypes. I use it to bring designs to  life, allowing stakeholders to experience the user flow and interactions before development.",
-        icon: '/assets/framer.svg',
+        name: 'Openvault LLC',
+        pos: 'Software Engineer',
+        duration: 'Sept. 2022 - Dec. 2024',
+        title: "I developed frontend interfaces for a SaaS app using React and Angular, leading the migration from React to Angular. I built RESTful API endpoints with Django, ensuring smooth frontend-backend communication and optimized performance. I wrote unit tests, engineered backend endpoints, and collaborated with UI/UX designers on custom components. I also contributed to code reviews to improve quality and team collaboration.",
+        icon: '/assets/OVLogo.png',
         animation: 'victory',
     },
     {
         id: 2,
-        name: 'Figma',
-        pos: 'Web Developer',
-        duration: '2020 - 2022',
-        title: "Figma is my collaborative design platform of choice. I utilize it to work seamlessly with team members and clients, facilitating real-time feedback and design iterations. Its cloud-based.",
-        icon: '/assets/figma.svg',
+        name: 'Money Map Press',
+        pos: 'Frontend Developer',
+        duration: 'June 2019 - Aug. 2022',
+        title: "I led a frontend overhaul using React, GraphQL, and WordPress, enhancing UX and functionality. I developed custom WordPress plugins, integrated third-party apps like Blueshift and Thinkific, and converted Adobe XD designs into responsive interfaces. I also built automation solutions, implemented testing frameworks, and optimized landing pages. Additionally, I modernized legacy code, maintained technical documentation, and used Google Analytics to drive user engagement.",
+        icon: '/assets/mmpLogo.png',
         animation: 'clapping',
     },
     {
         id: 3,
-        name: 'Notion',
-        pos: 'Junior Web Developer',
-        duration: '2019 - 2020',
-        title: "Notion helps me keep my projects organized. I use it for project management, task tracking, and as a central hub for documentation, ensuring that everything from design notes to.",
-        icon: '/assets/notion.svg',
+        name: 'Covalent Activewear',
+        pos: 'Web Developer',
+        duration: 'Aug. 2016 - June 2019',
+        title: "I create responsive landing pages with Magento CMS, HTML, CSS, and JavaScript, and develop custom Magento modules using PHP. I integrate third-party extensions, design email templates for targeted campaigns with Mailchimp, and optimize site performance with Google Analytics and SEO. I also edit product images with Photoshop and maintain code using Git.",
+        icon: '/assets/covalentLogo.png',
         animation: 'salute',
     },
 ];

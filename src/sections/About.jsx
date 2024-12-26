@@ -5,6 +5,7 @@ import Button from "../components/Button.jsx";
 const About = () => {
 
     const [hasCopied, setHasCopied] = React.useState(false);
+    const globeMethods = React.useRef(undefined);
 
     const handleCopy = () => {
         navigator.clipboard.writeText('kbuicuong@gmail.com');
@@ -49,6 +50,8 @@ const About = () => {
                         <div
                             className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
                             <Globe
+                                ref={globeMethods}
+                                onGlobeReady={() => globeMethods.current?.pointOfView({lng: -76.798019, lat: 39.267471})}
                                 height={326}
                                 width={326}
                                 backgroundColor='rgba(0,0,0,0)'
@@ -56,13 +59,15 @@ const About = () => {
                                 showAtmosphere
                                 showGraticules
                                 globeImageUrl='//unpkg.com/three-globe/example/img/earth-night.jpg'
-                                // labelsData={[{
-                                //     lat: 40,
-                                //     lng: -100,
-                                //     text: "I'm here!",
-                                //     color: 'white',
-                                //     size: 20,
-                                // }]}
+                                labelsData={[{
+                                    lat: 39.267471,
+                                    lng: -76.798019,
+                                    text: "I'm here!",
+                                    color: 'white',
+                                    size: 400,
+                                }]}
+                                labelSize={2.5}
+                                labelDotRadius={0.4}
                             />
                         </div>
                         <div>
@@ -70,8 +75,11 @@ const About = () => {
                                 most timezones.</p>
                             <p className='grid-subtext'>I'm based in the US,
                                 with remote work available</p>
-                            <Button name='Contact me' isBeam
-                                    containerClass='w-full mt-10'/>
+                            <a href='#contact' className='w-fit'>
+                                <Button name='Contact me' isBeam
+                                        containerClass='w-full mt-10'/>
+                            </a>
+
                         </div>
                     </div>
                 </div>
@@ -84,7 +92,7 @@ const About = () => {
                                 coding</p>
                             <p className='grid-subtext'>I love solving problems
                                 and building things through code. Coding isn't
-                                just profession - it is my passion.</p>
+                                just my profession - it is my passion.</p>
                         </div>
                     </div>
                 </div>
@@ -94,7 +102,7 @@ const About = () => {
                              className='w-full md:h-[126px] sm:h-[276px] h-fit object-cover sm:object-top'/>
                         <div className='space-y-2'>
                             <p className='grid-subtext text-center'>
-                                Contact me!
+                                My Email
                             </p>
                             <div className='copy-container'
                                  onClick={handleCopy}>

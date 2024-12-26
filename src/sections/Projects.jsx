@@ -59,7 +59,7 @@ const Projects = () => {
                            target={'_blank'}
                            rel={'noreferrer'}
                            className='flex items-center gap-2 cursor-pointer text-white-600'>
-                            <p>Check Live Site</p>
+                            <p>Check Github Repo</p>
                             <img src='/assets/arrow-up.png' alt='arrow'
                                  className='w-3 h-3'/>
                         </a>
