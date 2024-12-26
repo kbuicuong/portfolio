@@ -6,18 +6,20 @@ const Footer = () => {
                 © {new Date().getFullYear()} Kevin Bui. All rights reserved.
             </p>
             <div className='flex gap-3'>
-                <div className='social-icon'>
-                    <img src='/assets/github.svg' alt='github'
-                         className='w-1/2 h-1/2'/>
-                </div>
-                <div className='social-icon'>
-                    <img src='/assets/twitter.svg' alt='twitter'
-                         className='w-1/2 h-1/2'/>
-                </div>
-                <div className='social-icon'>
-                    <img src='/assets/instagram.svg' alt='linkedin'
-                         className='w-1/2 h-1/2'/>
-                </div>
+                <a href='github.com/kbuicuong' target={'_blank'}
+                   rel='noreferrer'>
+                    <div className='social-icon'>
+                        <img src='/assets/github.svg' alt='github'
+                             className='w-1/2 h-1/2'/>
+                    </div>
+                </a>
+                <a href='https://www.linkedin.com/in/cuong-bui-ba056b106/' target={'_blank'}
+                   rel='noreferrer'>
+                    <div className='social-icon'>
+                        <img src='/assets/LinkedIn.svg' alt='linkedin'
+                             className='w-1/2 h-1/2'/>
+                    </div>
+                </a>
             </div>
         </section>
     );

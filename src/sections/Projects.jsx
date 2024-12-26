@@ -33,7 +33,7 @@ const Projects = () => {
                     <div className='p-3 backdrop-filter backdrop-blur-3xl w-fit rounded-lg' style={currentProject.logoStyle}>
                         <img src={currentProject.logo} alt='logo' className='w-10 h-10 shadow-sm'/>
                     </div>
-                    <div className='flex flex-col gap-5 text-white-600 my-5'>
+                    <div className='flex flex-col gap-5 text-white-600 my-5 flex-1'>
                         <p className='text-white text-2xl font-semibold animatedText'>
                             {currentProject.title}
                         </p>
@@ -64,7 +64,7 @@ const Projects = () => {
                                  className='w-3 h-3'/>
                         </a>
                     </div>
-                    <div className='flex justify-between items-center mt-7'>
+                    <div className='flex justify-between items-center mt-7 '>
                         <button className='arrow-btn'
                                 onClick={() => handleNavigation('previous')}>
                             <img src='/assets/left-arrow.png' alt='left arrow'

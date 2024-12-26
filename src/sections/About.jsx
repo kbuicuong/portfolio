@@ -27,21 +27,18 @@ const About = () => {
                         <div className=''>
                             <p className='grid-headtext'>Hi, I'm Kevin</p>
                             <p className='grid-subtext'>With 8+ years of
-                                experience, I have honed my skills in frontend
-                                and backend development, with a focus on
-                                animated 3D websites.</p>
+                                experience, I have honed my skills in software engineering, with a focus on
+                                the frontend.</p>
                         </div>
                     </div>
                 </div>
                 <div className='col-span-1 xl:row-span-3'>
                     <div className='grid-container'>
-                        <img src='/assets/grid2.png' alt='grid-2'
+                        <img src='/assets/grid5.png' alt='grid-2'
                              className='w-full sm:h-[276px] h-fit object-contain'/>
                         <div>
                             <p className='grid-headtext'>Tech Stack</p>
-                            <p className='grid-subtext'>I specialize in
-                                JavaScript/Typescript with a focus on React and
-                                Next.js ecosystems.</p>
+                            <p className='grid-subtext'>Javascript/Typescript, React, Next.js, Angular, Django, Node.js, PostgreSQL</p>
                         </div>
                     </div>
                 </div>
@@ -73,8 +70,7 @@ const About = () => {
                         <div>
                             <p className='grid-headtext'>I work remotely across
                                 most timezones.</p>
-                            <p className='grid-subtext'>I'm based in the US,
-                                with remote work available</p>
+                            <p className='grid-subtext'>I'm based in Maryland, U.S.A.</p>
                             <a href='#contact' className='w-fit'>
                                 <Button name='Contact me' isBeam
                                         containerClass='w-full mt-10'/>
